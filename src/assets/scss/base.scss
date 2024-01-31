@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+// Primary
+$neptun-white: #ffffff;
+$neptun-black: #000;
+$neptun-yellow: #FFCA17;
+
+//secundary
+// color themes for disabled stuff or skeleton load
+$dark-disabled: #545454;
+$other-neptun-yellow:#FDDF19;
+$muted-neptun-yellow:#A58300;
+
+//text
+$text-color: #fff;
+$text-color-headings:#fff;
+
+/*------------------------------------*\
+    #BACKGROUND
+\*------------------------------------*/
+
+$bg-chef-gif: url('./images/Chef.gif');
+
+/*------------------------------------*\
+    #FONT SETTINGS
+\*------------------------------------*/
+
+
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: $neptun-black;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
