@@ -61,7 +61,7 @@ const handleClick = (e) => {
   &--circle {
     height: 50px;
     width: 50px;
-    border-radius: 10;
+    border-radius: 100%;
   }
 
   &--disabled {

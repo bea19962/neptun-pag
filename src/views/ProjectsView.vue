@@ -26,7 +26,6 @@ onBeforeMount(() => {
 
 <style lang="scss" scoped>
 .projects {
-  height: 100vh;
   max-width: 100%;
   overflow-x: scroll;
 
