@@ -37,4 +37,9 @@ onBeforeMount(() => {
   }
 }
 
+.projects_title{
+  color: white;
+  font-size: 28px;
+}
+
 </style>

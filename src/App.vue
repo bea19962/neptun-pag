@@ -12,7 +12,7 @@ import BaseBanner from '@/components/Base/BaseBanner.vue'
 import HomeView from '@/views/HomeView.vue';
 import ProjectsView from '@/views/ProjectsView.vue'
 
-const bannerMessage = 'We are now in Steam'
+const bannerMessage = 'Whishlist us in Steam'
 </script>
 
 <style lang="scss" scoped>
