@@ -17,6 +17,7 @@ const bannerMessage = 'We are now in Steam'
 
 <style lang="scss" scoped>
 #app{
-  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
 }
 </style>

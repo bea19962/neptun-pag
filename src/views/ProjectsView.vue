@@ -1,7 +1,9 @@
 <template>
   <div class="projects">
-    <div class="title">Our Projects</div>
-    <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+    <div class="projects_title">Our Projects</div>
+    <div class="projects_container">
+      <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+    </div>
   </div>
 </template>
 
@@ -25,8 +27,14 @@ onBeforeMount(() => {
 <style lang="scss" scoped>
 .projects {
   height: 100vh;
-  display: flex;
-  flex-direction: row;
+  max-width: 100%;
   overflow-x: scroll;
+
+  &_container{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  }
 }
+
 </style>
