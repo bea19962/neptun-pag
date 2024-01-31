@@ -39,7 +39,7 @@ const backgroundStyle = computed(() => ({
   background-color: $neptun-black;
   margin: 1.5rem;
   padding: 1rem;
-  width: 600px;
+  width: 800px;
   height: 400px;
   color: white;
 
