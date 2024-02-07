@@ -4,28 +4,27 @@
 
 /* For the scrollbar itself */
 ::-webkit-scrollbar {
-    width: 8px; /* Width of the vertical scrollbar */
-    height: 8px; /* Height of the horizontal scrollbar */
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $muted-neptun-yellow; /* Scrollbar handle color */
-    border-radius: 6px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $neptun-black opacity($color: #000000);
-  }
-  
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $muted-neptun-yellow; /* Scrollbar handle color */
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $neptun-black opacity($color: #000000);
+}
+
 /*-------------------------------------------------*\
     #For Firefox
 \*-------------------------------------------------*/
 
-  /* For the scrollbar track */
+/* For the scrollbar track */
 * {
-    scrollbar-width: thin; /* "auto" or "thin" */
-    scrollbar-color: #888 #f1f1f1; /* thumb and track color */
-  }
-  
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #f1f1f1; /* thumb and track color */
+}
