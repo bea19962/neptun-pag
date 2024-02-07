@@ -1,13 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="about">ein wahrer chef</div>
+  <div class="about">schick brief taube</div>
 </template>
 
 <style scoped>
 .about {
-  background-color: paleturquoise;
-  width: 100vw;
   height: 100vh;
+  color: white;
 }
 </style>

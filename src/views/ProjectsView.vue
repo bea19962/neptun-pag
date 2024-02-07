@@ -29,16 +29,15 @@ onBeforeMount(() => {
   max-width: 100%;
   overflow-x: scroll;
 
-  &_container{
+  &_container {
     display: flex;
     flex-direction: row;
     width: fit-content;
   }
 }
 
-.projects_title{
+.projects_title {
   color: white;
   font-size: 28px;
 }
-
 </style>

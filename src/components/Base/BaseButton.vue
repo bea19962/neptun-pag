@@ -9,18 +9,15 @@
     v-bind="$attrs"
     @click="handleClick"
   >
-  <slot />
-    <div v-if="$slots.icon" class="base-button__icon">
-      <!-- <BaseIcon
-        v-else-if="icon"
-        :name="icon"
-        :size="iconSize"
-      /> -->
-    </div>
+    <slot />
+    <!-- <div v-if="$slots.icon" class="base-button__icon"> -->
+    <BaseIcon v-if="icon" :name="icon" :size="iconSize" />
+    <!-- </div> -->
   </button>
 </template>
 
 <script setup>
+import BaseIcon from './BaseIcon.vue'
 const props = defineProps({
   name: {
     type: String,
@@ -38,6 +35,7 @@ const props = defineProps({
     type: String,
     default: ''
   },
+
 })
 
 const emits = defineEmits(['click'])

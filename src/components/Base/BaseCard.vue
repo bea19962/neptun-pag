@@ -2,7 +2,7 @@
   <div class="card" :style="backgroundStyle">
     <div class="card-header">
       <slot name="header">
-        <img src=""/>
+        <img src="" />
       </slot>
     </div>
     <div class="card-footer">

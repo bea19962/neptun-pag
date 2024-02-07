@@ -10,7 +10,7 @@
     </div>
     <div class="card-footer">
       {{ project.description }}
-      <BaseButton circle>Chevron</BaseButton>
+      <BaseButton circle :icon="chevron"> </BaseButton>
     </div>
   </div>
 </template>
@@ -50,9 +50,9 @@ const backgroundStyle = computed(() => ({
     }
   }
   &-footer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1.9fr 0.1fr;
   }
 }
 </style>
