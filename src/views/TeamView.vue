@@ -1,13 +1,14 @@
 <template>
   <div class="team">
     <div class="team__title">The Team</div>
-    <div v-for="member in teamMembers" :key="member.id" class="team__row">
-      {{ member }}
+    <div class="team__row">
+      <TeamMemberCard v-for="member in teamMembers" :key="member.id" :member="member" />
     </div>
   </div>
 </template>
 
 <script setup>
+import TeamMemberCard from '@/components/TeamMemberCard.vue'
 import { ref, onBeforeMount } from 'vue'
 
 const teamMembers = ref([])
@@ -24,7 +25,8 @@ onBeforeMount(() => {
 </script>
 
 <style lang="scss" scoped>
-.team{
+.team {
+  height: 100vh;
   color: white;
 }
 </style>
