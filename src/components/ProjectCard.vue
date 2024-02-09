@@ -10,7 +10,7 @@
     </div>
     <div class="card-footer">
       {{ project.description }}
-      <BaseButton circle :icon="chevron"> </BaseButton>
+      <BaseButton circle :icon="chevron"> ^ </BaseButton>
     </div>
   </div>
 </template>
@@ -35,13 +35,18 @@ const backgroundStyle = computed(() => ({
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid $neptun-yellow;
+  border: 2px solid $muted-neptun-yellow;
   background-color: $neptun-black;
   margin: 1.5rem;
   padding: 1rem;
   width: 800px;
   height: 400px;
   color: white;
+
+  &:hover {
+    border: 2px solid $neptun-yellow;
+  }
+
 
   &-header {
     width: 40%;

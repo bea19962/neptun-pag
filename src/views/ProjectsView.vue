@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <div class="projects_title">Our Projects</div>
+    <div class="view_title">Our Projects</div>
     <div class="projects_container">
       <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
     </div>

@@ -29,7 +29,7 @@ $bg-chef-gif: url('./images/Chef.gif');
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
+  color: $neptun-white;
   background: $neptun-black;
   transition:
     color 0.5s,
@@ -52,4 +52,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.view_title {
+  color: white;
+  font-size: 28px;
 }
