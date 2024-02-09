@@ -21,6 +21,7 @@ const props = defineProps({
   }
 })
 
+console.log(props.name)
 const Icon = computed(() =>
   defineAsyncComponent(() => import(`../../assets/icons/${props.name}.svg`))
 )
@@ -29,6 +30,7 @@ const Icon = computed(() =>
 <style lang="scss" scoped>
 .base-icon {
   display: flex;
+  color: aliceblue;
 
   &--size-xs {
     height: 0.625rem;

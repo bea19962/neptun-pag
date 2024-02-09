@@ -3,11 +3,17 @@
     <BaseProfilePicture :src="member.image" :altText="member.name + ' picture'" />
     <h3>{{ member.name }}</h3>
     <p>{{ member.position }}</p>
+    <div v-for="(url, key) in member.social" :key="key" class="social">
+      <a v-if="url !== ''" :href="url" target="_blank" class="test">
+        <BaseIcon :name="key" size="md" />
+      </a>
+    </div>
   </div>
 </template>
 
 <script setup>
 import BaseProfilePicture from './Base/BaseProfilePicture.vue'
+import BaseIcon from './Base/BaseIcon.vue'
 
 defineProps({
   member: Object
