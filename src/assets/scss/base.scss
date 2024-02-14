@@ -12,6 +12,7 @@ $neptun-yellow: #ffca17;
 $dark-disabled: #545454;
 $other-neptun-yellow: #fddf19;
 $muted-neptun-yellow: #a58300;
+$light-neptun-yellow: #ffeb85;
 
 //text
 $text-color: #fff;
@@ -56,5 +57,9 @@ body {
 
 .view_title {
   color: white;
-  font-size: 28px;
+  font-size: 48px;
+  font-weight: 600;
+  margin:30px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

@@ -26,7 +26,7 @@ onBeforeMount(() => {
 
 <style lang="scss" scoped>
 .projects {
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: scroll;
 
   &_container {
@@ -34,10 +34,5 @@ onBeforeMount(() => {
     flex-direction: row;
     width: fit-content;
   }
-}
-
-.projects_title {
-  color: white;
-  font-size: 28px;
 }
 </style>

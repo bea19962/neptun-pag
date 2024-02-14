@@ -34,6 +34,7 @@ onBeforeMount(() => {
     display: flex;
     flex-direction: row;
     gap: 1%;
+    justify-content: center;
   }
 }
 </style>

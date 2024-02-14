@@ -26,5 +26,6 @@ defineProps({
   border: 2px solid $muted-neptun-yellow;
   padding: 20px;
   text-align: center;
+  font-size: 20px;
 }
 </style>

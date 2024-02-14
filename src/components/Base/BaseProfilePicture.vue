@@ -12,8 +12,8 @@ defineProps({
 
 <style scoped>
 .profile-picture {
- width: 100px;
- height: 100px;
+ width: 200px;
+ height: 200px;
  border-radius: 50%;
  object-fit: cover;
 }
