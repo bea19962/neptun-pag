@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="about">schick brief taube</div>
+  <div class="about">
+    <div class="view_title">Contact Us</div>
+    schick brief taube</div>
 </template>
 
 <style scoped>

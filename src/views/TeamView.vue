@@ -12,7 +12,6 @@ an Indie-Media developer team based in Cologne Germany. After 6 years of success
 <script setup>
 import TeamMemberCard from '@/components/TeamMemberCard.vue'
 import { ref, onBeforeMount} from 'vue'
-import { setupScrollAnimation } from '@/utils/onScrollAnim.js'; 
 
 const teamMembers = ref([])
 const teamMembersPath = 'team.json'
