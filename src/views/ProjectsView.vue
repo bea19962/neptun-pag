@@ -1,44 +1,35 @@
 <template>
   <div class="view_title">Our Projects</div>
   <div class="projects">
-    <div ref="projectsContainer" class="projects_container" @wheel="handleWheel">
+    <div ref="projectsContainer" class="projects_container">
       <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import ProjectCard from '@/components/ProjectCard.vue'
+import horizontalScroll from '@/utils/horizontalScroll';
 
 const projects = ref([])
 const projectsPath = 'projects.json'
-
 const projectsContainer = ref(null)
 
-const handleWheel = (evt) => {
-  console.log('Wheel event triggered', evt)
-  evt.preventDefault()
-  if (projectsContainer.value) {
-    const scrollAmount = evt.deltaY * 2 // Increase the multiplier as needed
-    projectsContainer.value.scrollLeft += 10000
-    console.log('Scroll Left: ', projectsContainer.value.scrollLeft)
-    console.log('Scrolling: ', scrollAmount)
-  } else {
-    console.log('projectsContainer is not available')
-  }
-}
 
 onMounted(() => {
-  console.log('Mounted - projectsContainer:', projectsContainer.value)
   fetch(projectsPath)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log('Projects loaded', data)
-      projects.value = data
+    .then(res => res.json())
+    .then(data => {
+      projects.value = data;
+      nextTick(() => {
+        if (projectsContainer.value) {
+          horizontalScroll(projectsContainer.value);
+        }
+      });
     })
-    .catch((err) => console.error('Error fetching projects:', err))
-})
+    .catch(err => console.error('Error fetching projects:', err));
+});
 </script>
 
 <style lang="scss" scoped>
@@ -51,6 +42,7 @@ onMounted(() => {
     flex-direction: row;
     flex-wrap: nowrap;
     width: fit-content;
+    will-change: transform; /* Optimize scrolling performance */
   }
 }
 </style>
