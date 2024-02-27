@@ -6,7 +6,7 @@ export function setupScrollAnimation({ selector, animationClass = 'animate', del
        entry.target.classList.add(animationClass);
      } else {
        entry.target.classList.remove(animationClass);
-       entry.target.style.animationDelay = '0ms';
+       entry.target.style.animationDelay = '1ms';
      }
    });
  }, { threshold });

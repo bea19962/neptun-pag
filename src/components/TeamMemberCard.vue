@@ -38,7 +38,7 @@ onMounted(() => {
   padding: 20px;
   text-align: center;
   font-size: 20px;
-  transform: translateX(-50px); /* Start off-screen */
+  //transform: translateX(-650px); /* Start off-screen */
   opacity: 0;
 }
 
