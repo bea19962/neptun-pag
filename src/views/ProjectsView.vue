@@ -4,6 +4,9 @@
     <div ref="projectsContainer" class="projects_container">
       <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
     </div>
+    <BaseSwimlane>
+      <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+    </BaseSwimlane>
   </div>
 </template>
 

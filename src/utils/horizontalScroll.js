@@ -16,7 +16,8 @@ const setupHorizontalScroll = (container) => {
             scrub: true,
             pin: true,
             anticipatePin: 1,
-            invalidateOnRefresh: true
+            invalidateOnRefresh: true,
+            markers: true // Add this line for debugging
         }
     });
 };
