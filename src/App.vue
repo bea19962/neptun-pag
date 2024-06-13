@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <HomeView />
-    <BaseBanner :messages="bannerMessage" />
+    <!-- <BaseBanner :messages="bannerMessage" />
     <ProjectsView />
     <TeamView />
-    <AboutView />
+    <AboutView /> -->
   </div>
 </template>
 
